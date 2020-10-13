@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js"></script>
     <title>Etch-a-Sketch</title>
 </head>
 <body>
-    
+    <h1> Etch-a-Sketch</h1>
+    <div id="forms">
+    <form>
+        <label for="noDivs">Number of squares per side (1-100)</label> <br />
+        <input type="number" id="noDivs" name="noDivs" min="1" max="100" placeholder="16"><br />
+        <button type="submit">Start!</button>
+    </form>
+    <br>
+    <form>
+        <label for="colorchange">Etching Color</label> <br />
+        <label><input type="radio" id="black" name="colorchange" value="black" checked="checked">Black</label><br />
+        <label><input type="radio" id="white" name="colorchange" value="white" checked="">White</label><br />
+        <label><input type="radio" id="randomcolor" name="colorchange" value="randomcolor" checked="">Random</label><br />
+    </form>
+    </div>
+
+    <div id="rightside">
+        <div id="container">test</div> 
+        <br />
+        <div id="buttonOnly"> <button id="clearme" type="submit">Clear</button></div>
+        
+    </div>
 </body>
 </html>
