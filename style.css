@@ -47,10 +47,13 @@ h1 {
   min-height: 1;
   width: 100%;
   min-width: 100%;
+  --gridrow: value;
 }
 
 .grid-column {
   display: inline-grid;
   grid-auto-flow: column dense;
   min-height: 1;
+  background-color: grey;
+  --gridcolumn: value;
 }

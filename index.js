@@ -14,13 +14,10 @@ function tableIt(numDivs){
         let grid = document.createElement('div');
         grid.classList.add('grid-row');
         grid.innerHTML = '&nbsp';
-        console.log('current i is : ' + i);
         for (j = 0; j <numDivs; j++) { //creates items in the row (aka columns)
             let gridBox = document.createElement('div');
             gridBox.classList.add('grid-column');
             gridBox.innerHTML = '&nbsp';
-            console.log('i is ' + i);
-            console.log('j is ' + j);
             grid.appendChild(gridBox);
         }
         container.appendChild(grid);
