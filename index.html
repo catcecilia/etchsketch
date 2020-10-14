@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <title>Etch-a-Sketch</title>
 </head>
 <body>
@@ -24,11 +24,10 @@
     </form>
     </div>
 
-    <div id="rightside" onload="tableIt(16)">
-        <div id="container">test</div> 
+    <div id="rightside">
+        <div id="container">this text should be gone</div> 
         <br />
         <div id="buttonOnly"> <button id="clearme" type="submit" onclick="clearMe()">Clear</button></div>
-        
     </div>
 </body>
 </html>
