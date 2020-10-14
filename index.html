@@ -11,9 +11,9 @@
     <h1> Etch-a-Sketch</h1>
     <div id="forms">
     <form>
-        <label for="noDivs">Number of squares per side (1-100)</label> <br />
-        <input type="number" id="noDivs" name="noDivs" min="1" max="100" placeholder="16"><br />
-        <button type="submit">Start!</button>
+        <label for="numDivs">Number of squares per side (1-100)</label> <br />
+        <input type="number" id="numDivs" name="numDivs" min="1" max="100" value="16"><br />
+        <button type="submit" onclick="userNumber()">Create</button>
     </form>
     <br>
     <form>
@@ -24,10 +24,10 @@
     </form>
     </div>
 
-    <div id="rightside">
+    <div id="rightside" onload="tableIt(16)">
         <div id="container">test</div> 
         <br />
-        <div id="buttonOnly"> <button id="clearme" type="submit">Clear</button></div>
+        <div id="buttonOnly"> <button id="clearme" type="submit" onclick="clearMe()">Clear</button></div>
         
     </div>
 </body>
