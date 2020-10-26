@@ -13,47 +13,70 @@ input[type="number"] {
 h1 {
   text-align: center;
 }
-#forms {
-  float: left;
-  margin: 0 auto;
-  padding: 5%;
-  margin: 2%;
-  width: 25%;
-}
-
-#rightside {
-  display: grid;
-  float: right;
-  padding-top: 5%;
-  margin-top: 2%;
-  width: 45%;
-}
 
 #buttonOnly {
+  display: flex;
+  justify-content: center;
+}
+
+#colors {
   text-align: center;
 }
 
-#container {
-  display: grid;
-  justify-content: center;
-  height: 60vh;
-}
-
-.grid-row {
-  display: grid;
-  padding: 0;
-  margin: 0;
-  grid-auto-flow: row;
-  min-height: 1;
+.gridbox {
+  display: flex;
   width: 100%;
-  min-width: 100%;
-  --gridrow: value;
+}
+.grid {
+  background: lightgray;
+  flex: 1;
 }
 
-.grid-column {
-  display: inline-grid;
-  grid-auto-flow: column dense;
-  min-height: 1;
-  background-color: grey;
-  --gridcolumn: value;
+.active {
+  background: var(--base);
+}
+
+:root {
+  --base: black;
+}
+/*Chrome, Safari, Edge, Opera*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+h1 {
+  text-align: center;
+}
+
+#buttonOnly {
+  display: flex;
+  justify-content: center;
+}
+
+#colors {
+  text-align: center;
+}
+
+.gridbox {
+  display: flex;
+  width: 100%;
+}
+.grid {
+  background: lightgray;
+  flex: 1;
+}
+
+.active {
+  background: var(--base);
+}
+
+:root {
+  --base: black;
 }

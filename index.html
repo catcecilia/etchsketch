@@ -1,33 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="index.js" defer></script>
     <title>Etch-a-Sketch</title>
 </head>
 <body>
     <h1> Etch-a-Sketch</h1>
-    <div id="forms">
-    <form>
-        <label for="numDivs">Number of squares per side (1-100)</label> <br />
-        <input type="number" id="numDivs" name="numDivs" min="1" max="100" value="16"><br />
-        <button type="submit" onclick="userNumber()">Create</button>
-    </form>
-    <br>
-    <form>
-        <label for="colorchange">Etching Color</label> <br />
-        <label><input type="radio" id="black" name="colorchange" value="black" checked="checked">Black</label><br />
-        <label><input type="radio" id="white" name="colorchange" value="white" checked="">White</label><br />
-        <label><input type="radio" id="randomcolor" name="colorchange" value="randomcolor" checked="">Random</label><br />
-    </form>
-    </div>
-
-    <div id="rightside">
-        <div id="container">this text should be gone</div> 
+        <div id="buttonOnly"> <button id="clearing" type="button" onclick="clearMe()">Clear</button></div>
         <br />
-        <div id="buttonOnly"> <button id="clearme" type="submit" onclick="clearMe()">Clear</button></div>
-    </div>
+        <div id="container"></div> 
+        <br />
+        <div id="colors">
+            <p>Change sketch color</p>
+            <div>
+            <button type="button" onclick="changeColor('white')">White</button>
+            <button type="button" onclick="changeColor('black')">Black</button>
+            <button type="button" onclick="changeColor('blue')">Blue</button>
+        </div>
+        </div>
+    <!-- </div> -->
+    <script src="index.js"></script>
 </body>
-</html>
